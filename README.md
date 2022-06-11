@@ -18,3 +18,5 @@ Discord grubumuza davetlsiniz : discord.gg/yz5xNNGM5C
 [ 11.06.2022 ] : Heimdall npc modeli eklendi. > npcs
 
 [ 11.06.2022 ] : Ejder pet modelleri eklendi. > pets
+
+[ 12.06.2022 ] : Binek modelleri eklendi. > mounts
