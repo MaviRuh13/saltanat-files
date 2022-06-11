@@ -1,0 +1,57 @@
+ScriptType               MotionData
+
+MotionFileName           "D:\Ymir Work\pc\warrior\skill\jeonsingonggyeok.GR2"
+MotionDuration           2.666667
+
+Group MotionEventData
+{
+    MotionEventDataCount     4
+    Group Event00
+    {
+        MotionEventType      1
+        StartingTime         0.210868
+        
+        IndependentFlag      0
+        AttachingEnable      0
+        AttachingBoneName    "Bip01 HeadNub"
+        FollowingEnable      0
+        EffectFileName       "d:/ymir work/pc/warrior/effect/jeonsinbangeo_making.mse"
+        EffectPosition       0.000000 0.000000 0.000000
+    }
+	Group Event01
+    {
+        MotionEventType      1
+        StartingTime         1.107692
+        
+        IndependentFlag      0
+        AttachingEnable      1
+        AttachingBoneName    "Bip01 Footsteps"
+        FollowingEnable      1
+        EffectFileName       "d:/ymir work/pc/warrior/effect/elect.mse"
+        EffectPosition       0.000000 0.000000 0.000000
+    }
+    Group Event02
+    {
+        MotionEventType      1
+        StartingTime         0.600000
+        
+        IndependentFlag      0
+        AttachingEnable      1
+        AttachingBoneName    "equip_right_hand"
+        FollowingEnable      1
+        EffectFileName       "d:/ymir work/pc/warrior/effect/elect.mse"
+        EffectPosition       0.000000 0.000000 0.000000
+    }
+	Group Event03
+    {
+        MotionEventType      1
+        StartingTime         0.175182
+        
+        IndependentFlag      0
+        AttachingEnable      0
+        AttachingBoneName    "Bip01 HeadNub"
+        FollowingEnable      0
+        EffectFileName       "d:/ymir work/pc/warrior/effect/jeonsingonggyeok_making.mse"
+        EffectPosition       0.000000 0.000000 0.000000
+    }
+}

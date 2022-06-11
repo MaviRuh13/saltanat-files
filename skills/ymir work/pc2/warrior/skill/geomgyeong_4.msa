@@ -1,0 +1,91 @@
+ScriptType               MotionData
+
+MotionFileName           "d:/ymir work/pc2/warrior/skill/geomgyeong.gr2"
+MotionDuration           2.000000
+Accumulation           0.00	0.00	0.00
+
+Group MotionEventData
+{
+    MotionEventDataCount     7
+    Group Event00
+    {
+        MotionEventType      1
+        StartingTime         0.025641
+        
+        IndependentFlag      0
+        AttachingEnable      1
+        AttachingBoneName    "equip_right_hand"
+        FollowingEnable      1
+        EffectFileName       "d:/ymir work/pc/warrior/effect/geom_4_sword_making.mse"
+        EffectPosition       0.000000 0.000000 0.000000
+    }
+    Group Event01
+    {
+        MotionEventType      1
+        StartingTime         0.413625
+        
+        IndependentFlag      0
+        AttachingEnable      1
+        AttachingBoneName    "equip_right_hand"
+        FollowingEnable      1
+        EffectFileName       "d:/ymir work/pc/warrior/effect/geom_4_sword_making.mse"
+        EffectPosition       0.000000 0.000000 0.000000
+    }
+    Group Event02
+    {
+        MotionEventType      1
+        StartingTime         0.635897
+        
+        IndependentFlag      0
+        AttachingEnable      0
+        AttachingBoneName    "Bip01 Footsteps"
+        FollowingEnable      0
+        EffectFileName       "d:/ymir work/pc/warrior/effect/geom_4_badak.mse"
+        EffectPosition       0.000000 0.000000 0.000000
+    }
+	Group Event03
+    {
+        MotionEventType      1
+        StartingTime         0.600000
+        
+        IndependentFlag      0
+        AttachingEnable      1
+        AttachingBoneName    "equip_right_hand"
+        FollowingEnable      1
+        EffectFileName       "d:/ymir work/pc/warrior/effect/elect.mse"
+		EffectPosition       0.000000 0.000000 0.000000
+	}
+	Group Event04
+    {
+        MotionEventType      1
+        StartingTime         0.434307
+        
+        IndependentFlag      0
+        AttachingEnable      1
+        AttachingBoneName    "Bip01 R Hand"
+        FollowingEnable      1
+        EffectFileName       "d:/ymir work/pc/sura/effect/geompung_sword.mse"
+        EffectPosition       0.000000 0.000000 0.000000
+    }
+	Group Event05
+    {   
+		MotionEventType      1
+        StartingTime         0.041026
+
+        AttachingEnable      0
+        AttachingBoneName    "Bip01 Footsteps"
+        FollowingEnable      0
+        EffectFileName       "d:/ymir work/pc/warrior/effect/sa_za_hu.mse"
+        EffectPosition       0.000000 0.000000 0.000000
+	}
+    Group Event06
+    {
+        MotionEventType      2
+        StartingTime         0.618005
+        
+        DuringTime           0.200000
+        Power                300
+        AffectingRange       200
+    }
+}
+
