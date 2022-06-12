@@ -1,0 +1,74 @@
+# Arat :
+# SHOP_ERROR_DICT = {
+# Ýçerisinde : "NOT_ENOUGH_MONEY_EX" : SHOP_NOT_ENOUGH_MONEY_EX,
+# Altýna Ekle :
+
+	"NOT_ENOUGH_DRAGON_COIN" : SHOP_NOT_ENOUGH_DRAGON_COIN,
+	"NOT_ENOUGH_DRAGON_MARK" : SHOP_NOT_ENOUGH_DRAGON_MARK,
+	"NOT_ENOUGH_ALIGNMENT" : SHOP_NOT_ENOUGH_ALIGNMENT,
+	
+# Arat :
+# STAT_MINUS_DESCRIPTION = {
+# Üzerine Ekle :
+
+if app.ENABLE_2TH_SHOPEX_SYSTEM:
+	SHOP_NAME_DICT = {
+		"SHOPNAME_DEFAULT" : SHOPNAME_DEFAULT,
+		"SHOPNAME_9001_0" : SHOPNAME_9001_0,
+		"SHOPNAME_9001_1" : SHOPNAME_9001_1,
+		"SHOPNAME_9002_0" : SHOPNAME_9002_0,
+		"SHOPNAME_9002_1" : SHOPNAME_9002_1,
+		"SHOPNAME_9003_0" : SHOPNAME_9003_0,
+		"SHOPNAME_9003_1" : SHOPNAME_9003_1,
+		"SHOPNAME_9005_0" : SHOPNAME_9005_0,
+		"SHOPNAME_9006_0" : SHOPNAME_9006_0,
+		"SHOPNAME_9009_0" : SHOPNAME_9009_0,
+		"SHOPNAME_9009_1" : SHOPNAME_9009_1,
+		"SHOPNAME_20001_0" : SHOPNAME_20001_0,
+		"SHOPNAME_20001_1" : SHOPNAME_20001_1,
+		"SHOPNAME_20015_0" : SHOPNAME_20015_0,
+		"SHOPNAME_20015_1" : SHOPNAME_20015_1,
+		"SHOPNAME_20084_0" : SHOPNAME_20084_0,
+		"SHOPNAME_20084_1" : SHOPNAME_20084_1,
+		"SHOPNAME_20094_0" : SHOPNAME_20094_0,
+		"SHOPNAME_20094_1" : SHOPNAME_20094_1,
+		"SHOPNAME_20300_0" : SHOPNAME_20300_0,
+		"SHOPNAME_20300_1" : SHOPNAME_20300_1,
+		"SHOPNAME_20301_0" : SHOPNAME_20301_0,
+		"SHOPNAME_20301_1" : SHOPNAME_20301_1,
+		"SHOPNAME_20302_0" : SHOPNAME_20302_0,
+		"SHOPNAME_20302_1" : SHOPNAME_20302_1,
+		"SHOPNAME_20303_0" : SHOPNAME_20303_0,
+		"SHOPNAME_20303_1" : SHOPNAME_20303_1,
+		"SHOPNAME_20304_0" : SHOPNAME_20304_0,
+		"SHOPNAME_20304_1" : SHOPNAME_20304_1,
+		"SHOPNAME_20305_0" : SHOPNAME_20305_0,
+		"SHOPNAME_20305_1" : SHOPNAME_20305_1,
+		"SHOPNAME_20306_0" : SHOPNAME_20306_0,
+		"SHOPNAME_20306_1" : SHOPNAME_20306_1,
+		"SHOPNAME_20307_0" : SHOPNAME_20307_0,
+		"SHOPNAME_20307_1" : SHOPNAME_20307_1,
+	}
+	
+# Arat ( Sonuncu ) :
+# def NumberToSecondaryCoinString(n) :
+# Altýna Ekle :
+
+	if app.ENABLE_2TH_SHOPEX_SYSTEM:
+		def NumberToDragonCoinString(n):
+			if n <= 0 :
+				return "0 %s" % (MONETARY_UNIT_DC)
+
+			return "%s %s" % ('.'.join([ i-3<0 and str(n)[:i] or str(n)[i-3:i] for i in range(len(str(n))%3, len(str(n))+1, 3) if i ]), MONETARY_UNIT_DC) 		
+		
+		def NumberToDragonMarkString(n):
+			if n <= 0 :
+				return "0 %s" % (MONETARY_UNIT_DM)
+
+			return "%s %s" % ('.'.join([ i-3<0 and str(n)[:i] or str(n)[i-3:i] for i in range(len(str(n))%3, len(str(n))+1, 3) if i ]), MONETARY_UNIT_DM) 		
+		
+		def NumberToAlignmentString(n):
+			if n <= 0 :
+				return "0 %s" % (MONETARY_UNIT_ALIGN)
+
+			return "%s %s" % ('.'.join([ i-3<0 and str(n)[:i] or str(n)[i-3:i] for i in range(len(str(n))%3, len(str(n))+1, 3) if i ]), MONETARY_UNIT_ALIGN) 

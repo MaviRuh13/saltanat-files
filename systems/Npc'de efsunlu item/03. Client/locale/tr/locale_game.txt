@@ -1,0 +1,41 @@
+SHOPNAME_DEFAULT	Bilinmeyen Satýcý
+SHOPNAME_9001_0	Silah Satýcýsý - Normal Market
+SHOPNAME_9001_1	Silah Satýcýsý - Nesne Market
+SHOPNAME_9002_0	Zýrh Satýcýsý - Normal Market
+SHOPNAME_9002_1	Zýrh Satýcýsý - Nesne Market
+SHOPNAME_9003_0	Ýksir Satýcýsý - Normal Market
+SHOPNAME_9003_1	Ýksir Satýcýsý - Nesne Market
+SHOPNAME_9005_0	Depocu - Normal Market
+SHOPNAME_9006_0	Yaþlý Kadýn - Normal Market
+SHOPNAME_9009_0	Balýkçý - Normal Market
+SHOPNAME_9009_1	Balýkçý - Nesne Market
+SHOPNAME_20001_0	Simyacý - Normal Market
+SHOPNAME_20001_1	Simyacý - Nesne Market
+SHOPNAME_20015_0	Deokbae - Normal Market
+SHOPNAME_20015_1	Deokbae - Nesne Market
+SHOPNAME_20084_0	Biyolog Chaegirab - Normal Market
+SHOPNAME_20084_1	Biyolog Chaegirab - Nesne Market
+SHOPNAME_20094_0	Hong-Hae - Normal Market
+SHOPNAME_20094_1	Hong-Hae - Nesne Market
+SHOPNAME_20300_0	Bedensel Savaþ Öðretmeni - Normal Market
+SHOPNAME_20300_1	Bedensel Savaþ Öðretmeni - Nesne Market
+SHOPNAME_20301_0	Zihinsel Savaþ Öðretmeni - Normal Market
+SHOPNAME_20301_1	Zihinsel Savaþ Öðretmeni - Nesne Market
+SHOPNAME_20302_0	Yakýn Dövüþ Öðretmeni - Normal Market
+SHOPNAME_20302_1	Yakýn Dövüþ Öðretmeni - Nesne Market
+SHOPNAME_20303_0	Uzak Dövüþ Öðretmeni - Normal Market
+SHOPNAME_20303_1	Uzak Dövüþ Öðretmeni - Nesne Market
+SHOPNAME_20304_0	Büyülü Silah Öðretmeni - Normal Market
+SHOPNAME_20304_1	Büyülü Silah Öðretmeni - Nesne Market
+SHOPNAME_20305_0	Kara Büyü Öðretmeni - Normal Market
+SHOPNAME_20305_1	Kara Büyü Öðretmeni - Nesne Market
+SHOPNAME_20306_0	Ejderha Gücü Öðretmeni - Normal Market
+SHOPNAME_20306_1	Ejderha Gücü Öðretmeni - Nesne Market
+SHOPNAME_20307_0	Ýyileþtirme Öðretmeni - Normal Market
+SHOPNAME_20307_1	Ýyileþtirme Öðretmeni - Nesne Market
+MONETARY_UNIT_DC	Ejderha Parasý
+MONETARY_UNIT_DM	Ejderha Markasý
+MONETARY_UNIT_ALIGN	Sýralama Puaný
+SHOP_NOT_ENOUGH_DRAGON_COIN	Yeterli Ejderha Parasýna sahip deðilsin.
+SHOP_NOT_ENOUGH_DRAGON_MARK	Yeterli Ejderha Markasýna sahip deðilsin.
+SHOP_NOT_ENOUGH_ALIGNMENT	Yeterli Sýralama Puanýna sahip deðilsin.
