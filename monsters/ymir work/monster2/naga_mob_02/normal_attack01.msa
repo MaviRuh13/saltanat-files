@@ -1,0 +1,54 @@
+ScriptType               MotionData
+
+MotionFileName           "D:\Ymir Work\monster2\naga_soldier\normal_attack01.GR2"
+MotionDuration           1.000000
+
+Group AttackingData
+{
+    AttackType           0
+    HittingType          2
+    StiffenTime          0.000000
+    InvisibleTime        0.000000
+    ExternalForce        0.000000
+    HitLimitCount        0
+    
+    MotionType           0
+    HitDataCount         1
+    Group HitData00
+    {
+        AttackingStartTime   0.559611
+        AttackingEndTime     0.637470
+        AttackingBone        "Bip01 L Hand"
+        WeaponLength         75.000000
+        List HitPosition
+        {
+            0.559611 -12.974036 -163.347580 110.519653 -11.331294 -114.407227 53.711899
+            0.567944 3.170664 -166.818863 115.021111 -1.303580 -121.413399 55.497341
+            0.576277 22.044571 -164.928619 119.524345 13.986354 -123.442039 57.565826
+            0.584611 43.702171 -156.629700 124.978790 32.871807 -119.487816 60.728458
+            0.592944 66.976776 -139.680771 131.789810 53.065964 -107.813843 65.340286
+            0.601277 87.086449 -112.798317 141.172913 70.254303 -88.993805 72.074211
+            0.609611 99.245758 -77.528267 153.870605 82.605064 -66.506622 81.576424
+            0.617944 101.825546 -34.292187 167.317673 91.421944 -39.301437 93.213936
+            0.626277 92.525299 15.313446 177.554123 95.624329 -4.445343 105.275375
+            0.634611 74.469093 59.096123 179.227524 92.492355 31.325138 111.931557
+        }
+    }
+}
+
+Group MotionEventData
+{
+    MotionEventDataCount     1
+    Group Event00
+    {
+        MotionEventType      1
+        StartingTime         0.535280
+        
+        IndependentFlag      0
+        AttachingEnable      1
+        AttachingBoneName    "Bip01 L Hand"
+        FollowingEnable      0
+        EffectFileName       "d:/ymir work/effect/monster2/fire_ghost_boom_small.mse"
+        EffectPosition       0.000000 -70.000000 0.000000
+    }
+}
