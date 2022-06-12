@@ -24,3 +24,7 @@ Discord grubumuza davetlisiniz : discord.gg/yz5xNNGM5C
 [ 12.06.2022 ] : Canavar modelleri eklendi. > monsters
 
 [ 12.06.2022 ] : Npc, sandık questleri eklendi. > quests
+
+[ 12.06.2022 ] : Npcde efsunlu taşlı item satma sistemi eklendi. > systems
+
+[ 12.06.2022 ] : Malzemeli pazar kurma sistemi eklendi. > systems
