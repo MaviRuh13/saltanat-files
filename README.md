@@ -5,7 +5,8 @@ Discord grubumuza davetlisiniz : **discord.gg/yz5xNNGM5C**
 
 # GÜNCELLEME DETAYLARI
 <sup>
-[ 11.06.2022 ] : Minator itemleri eklendi. > models	
+
+[ 11.06.2022 ] : Minator itemleri eklendi. > models
 
 [ 11.06.2022 ] : Ekipman itemleri eklendi. > models
 
