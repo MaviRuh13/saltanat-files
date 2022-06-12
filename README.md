@@ -33,4 +33,6 @@ Discord grubumuza davetlisiniz : **discord.gg/yz5xNNGM5C**
 [ 12.06.2022 ] : Damage sınırını arttırmak için gerekli kodlar eklendi. > **systems**
 
 [ 12.06.2022 ] : 30K count sistemi eklendi. > **systems**
+
+[ 12.06.2022 ] : 1-5 arası efsunu mavi renk yapma eklentisi eklendi. > **systems**
 </sup>
