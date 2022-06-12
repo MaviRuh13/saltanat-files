@@ -3,7 +3,7 @@ Discord grubumuza davetlisiniz : discord.gg/yz5xNNGM5C
 
 
 
-#/------ GÜNCELLEME DETAYLARI ------\
+# GÜNCELLEME DETAYLARI
 
 [ 11.06.2022 ] : Minator itemleri eklendi. > models
 
