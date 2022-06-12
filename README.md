@@ -4,7 +4,7 @@ Discord grubumuza davetlisiniz : **discord.gg/yz5xNNGM5C**
 
 
 # GÜNCELLEME DETAYLARI
-
+<sub>
 [ 11.06.2022 ] : Minator itemleri eklendi. > models
 
 [ 11.06.2022 ] : 105-220-230-250 seviye itemleri eklendi. > models
@@ -32,3 +32,4 @@ Discord grubumuza davetlisiniz : **discord.gg/yz5xNNGM5C**
 [ 12.06.2022 ] : Damage sınırını arttırmak için gerekli kodlar eklendi. > systems
 
 [ 12.06.2022 ] : 30K count sistemi eklendi. > systems
+</sub>
