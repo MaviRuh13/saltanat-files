@@ -1,0 +1,35 @@
+say ( "Catalik PET Ýçin 200 Mor Elmas,200" ) 
+say ( "Pembe Elmas ve 200 Turuncu Elmas Vermek Zorundasin." )
+say_item_vnum(10010)
+say_item_vnum(10011)
+say_item_vnum(10014) 
+local sec = select ( "Devam" ) 
+if sec == 1 then 
+local incii = pc . count_item ( 10010 ) 
+local inciii = pc . count_item ( 10011 )
+local inciiii = pc . count_item ( 10014 ) 
+if incii < 200 then  
+say ( "Gerekli Malzemeleriniz Envanterinizde Bulunmuyor." ) 
+say ( "Catalik PET Ýçin Gerekli" ) 
+say ( "Malzemelerinizi Tamamlayýnýz." ) 
+return 
+elseif inciii < 200 then 
+say ( "Gerekli Malzemeleriniz Envanterinizde Bulunmuyor." ) 
+say ( "Catalik PET Ýçin Gerekli" ) 
+say ( "Malzemelerinizi Tamamlayýnýz." ) 
+return
+elseif inciiii < 200 then 
+say ( "Gerekli Malzemeleriniz Envanterinizde Bulunmuyor." ) 
+say ( "Catalik PET Ýçin Gerekli" ) 
+say ( "Malzemelerinizi Tamamlayýnýz." ) 
+return 
+else  
+pc . remove_item ( 10010 , 200 ) 
+pc . remove_item ( 10011 , 200 )
+pc . remove_item ( 10014 , 200 ) 
+say_item_vnum ( 53001 ) 
+pc . give_item2 ( 53001 , 1 ) 
+say ( "Catalik PET envanterinize gönderilmiþtir" ) 
+say ( "GameMaster takimi iyi oyunlar diler." ) 
+end 
+end 

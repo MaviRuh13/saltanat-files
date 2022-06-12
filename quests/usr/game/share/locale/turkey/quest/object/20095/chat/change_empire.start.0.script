@@ -1,0 +1,8 @@
+local item = select ( "Evet" , "Hayir" ) 
+if item == 1 then 
+setskin ( NOWINDOW ) 
+pc . setqf ( "clear" , 1 ) 
+pc . clear_skill ( ) 
+pc . set_skill_group ( 0 ) 
+elseif item == 2 then 
+return end 

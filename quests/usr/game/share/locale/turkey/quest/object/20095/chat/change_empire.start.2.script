@@ -1,0 +1,52 @@
+say_title ( "Kahraman Olmak mi Istiyorsun?" )
+say ( "" )
+say ( "" )
+say ( "Kahraman; En Iyi Derecedir." )
+say ( "Kahraman Olmak Icin 5 Milyon Yang Odemelisin." )
+say ( "Bunu Bana Odediginde Seni Kahraman" )
+say ( "Yapabilirim." )
+
+local opzioni = select ( "Ode" , "Odeme" )
+
+if opzioni == 1 then
+
+if pc . gold < 5000000 then
+
+say ( "" )
+say ( "" )
+say ( "" )
+say ( "5 Milyon Yanga İhtiyacin Var." )
+say ( "Bu İsi Bedavada Yapabilirdim Ama" )
+say ( "Sorumlu Boyle Istiyor..." )
+local main_set = select ( "Tamam")
+
+else
+
+say_title( "Kahraman Olmaya Yaklasiyorsun" )
+say ( "" )
+say ( "" )
+say ( "Tamam Kahraman Oldun!" )
+say ( "Ucretim Olan 5 Milyon Yangi Aldim." )
+say_title ("Sorumlu Boyle Istiyor...")
+pc.change_alignment (40000)
+pc.change_money( -5000000 )
+
+end
+
+elseif opzioni == 2 then
+
+say_title ( "Islemi Iptal Ediyorum" )
+say ( "" )
+say ( "" )
+say ( "Tamam, Islemi Iptal Ediyorum." )
+say ( "Bu Isi Bedava Yapabilirdim Ama" )
+say ( "Sorumlu Boyle Istiyor..." )
+end
+
+
+
+
+
+
+
+

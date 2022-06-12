@@ -1,0 +1,73 @@
+if pc . level < 1 then
+
+say_title ( "Savaþçý-P-NPC" )
+say ( "Perfect en ust duzey beceri sanatýdýr." )
+say ( "Buna henuz hazýr degilsin!" )
+say ( "Anliyorsun beni degil mi?" )
+say ( "+1 level olman gerek..." )
+
+local main_set = select ( "Tamam")
+
+else
+
+say_title ( "Savaþçý-P-NPC" )
+say ( "Perfect en ust duzey beceri sanatýdýr." )
+say ( "Belliki usta konumundasýn seni gelistirmeliyim." )
+say ( "Ama once 5 Adet 400M Bar Vermen Gerek." )
+
+local opzioni = select ( "Ode" , "Odeme" )
+
+if opzioni == 1 then
+
+if pc . count_item ( 80007 ) < 5 then
+
+say_title ( "Savaþçý-P-NPC" )
+say ( "5 Adet 400M Bar'a ihtiyacin var." )
+say ( "Su taþlarýný adada ki metinlerden elde edebilirsin. " )
+local main_set = select ( "Tamam")
+
+else
+
+say_title ( "Merhaba" )
+say ( "Yaþlý kadýndan becerilerini" )
+say ( "sýfýrladýydan öðretmenlerdende" )
+say ( "becerilerini seçtiysen." )
+say ( "Skillerini P yapayým mý?" )
+
+local skillp = select ("Evet","Hayýr")
+
+if skillp == 1 then
+
+pc.set_skill_level (1,59)
+pc.set_skill_level (2,59)
+pc.set_skill_level (3,59)
+pc.set_skill_level (4,59)
+pc.set_skill_level (5,59)
+pc.set_skill_level (16,59)
+pc.set_skill_level (17,59)
+pc.set_skill_level (18,59)
+pc.set_skill_level (19,59)
+pc.set_skill_level (20,59)
+pc.remove_item("80007",5)  
+
+elseif skillp == 2 then
+
+return
+end
+
+say_title ( "Savaþçý-P-NPC" )
+say ( "Artýk tum becerilerin Perfect Master gucunde!" )
+end
+
+elseif opzioni == 2 then
+
+say_title ( "Savaþçý-P-NPC" )
+say ( "Tamam, islemini iptal ediyorum." )
+end
+end
+
+
+
+
+
+

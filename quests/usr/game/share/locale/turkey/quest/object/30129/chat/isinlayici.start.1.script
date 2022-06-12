@@ -1,0 +1,35 @@
+say ( "Ölümcül Gücün Kolyesi Ýçin 200 (400M BAR),50" ) 
+say ( "The Devil's Catacomb Sandýðý ve 200 Su Taþý Vermek Zorundasin." )
+say_item_vnum(80007)
+say_item_vnum(50077)
+say_item_vnum(90005) 
+local sec = select ( "Devam" ) 
+if sec == 1 then 
+local incii = pc . count_item ( 80007 ) 
+local inciii = pc . count_item ( 50077 )
+local inciiii = pc . count_item ( 90005 ) 
+if incii < 200 then  
+say ( "Gerekli Malzemeleriniz Envanterinizde Bulunmuyor." ) 
+say ( "Ölümcül Gücün Kolyesi Ýçin Gerekli" ) 
+say ( "Malzemelerinizi Tamamlayýnýz." ) 
+return 
+elseif inciii < 50 then 
+say ( "Gerekli Malzemeleriniz Envanterinizde Bulunmuyor." ) 
+say ( "Ölümcül Gücün Kolyesi Ýçin Gerekli" ) 
+say ( "Malzemelerinizi Tamamlayýnýz." ) 
+return
+elseif inciiii < 200 then 
+say ( "Gerekli Malzemeleriniz Envanterinizde Bulunmuyor." ) 
+say ( "Ölümcül Gücün Kolyesi Ýçin Gerekli" ) 
+say ( "Malzemelerinizi Tamamlayýnýz." ) 
+return 
+else  
+pc . remove_item ( 80007 , 200 ) 
+pc . remove_item ( 50077 , 50 )
+pc . remove_item ( 90005 , 200 ) 
+say_item_vnum ( 71145 ) 
+pc . give_item2 ( 71145 , 1 ) 
+say ( "Ölümcül Gücün Kolyesi envanterinize gönderilmiþtir" ) 
+say ( "GameMaster takimi iyi oyunlar diler." ) 
+end 
+end 

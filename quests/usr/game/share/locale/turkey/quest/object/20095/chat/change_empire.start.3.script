@@ -1,0 +1,20 @@
+local count = pc . get_change_empire_count ( ) ; 
+if count >= 1 then 
+say ( "Selam krallik degistirmek mi istiyorsun?" ) 
+say ( "En az 50level ve 500k para ihtiyacin var.." ) 
+return 
+end 
+say_reward ( "Krallik Degisimi" ) 
+say ( "" ) 
+say ( "1.krallik kirmizi" ) 
+say ( "2.krallik sari" ) 
+say ( "3.krallik mavi" ) 
+say ( "Tamam " ) 
+say ( " Krallik degişsinmi.." ) 
+say ( "" ) 
+say ( "" ) 
+say ( "" ) 
+local s = select ( "Evet" , "Hayir" ) 
+if s == 1 then 
+change_empire . move_pc ( ) 
+end 

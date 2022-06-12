@@ -1,0 +1,3 @@
+pc . give_item2 ( "50081" , 20 ) 
+pc . give_item2 ( "80005" , 2 ) 
+pc . give_item2 ( "80006" , 2 ) 

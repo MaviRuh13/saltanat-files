@@ -1,0 +1,35 @@
+say ( "Ýrade Gücü Yüzüðü Ýçin 5 Beyaz Ýnci Paket" ) 
+say ( "5 Mavi Ýnci Paketi ve 5 Kýrmýzý Ýnci Paketi Vermek Zorundasin." )
+say_item_vnum(10002)
+say_item_vnum(10003)
+say_item_vnum(10004) 
+local sec = select ( "Devam" ) 
+if sec == 1 then 
+local incii = pc . count_item ( 10002 ) 
+local inciii = pc . count_item ( 10003 )
+local inciiii = pc . count_item ( 10004 ) 
+if incii < 5 then  
+say ( "Gerekli Malzemeleriniz Envanterinizde Bulunmuyor." ) 
+say ( "Ýrade Gücü Yüzüðü Ýçin Gerekli" ) 
+say ( "Malzemelerinizi Tamamlayýnýz." ) 
+return 
+elseif inciii < 5 then 
+say ( "Gerekli Malzemeleriniz Envanterinizde Bulunmuyor." ) 
+say ( "Ýrade Gücü Yüzüðü Ýçin Gerekli" ) 
+say ( "Malzemelerinizi Tamamlayýnýz." ) 
+return
+elseif inciiii < 5 then 
+say ( "Gerekli Malzemeleriniz Envanterinizde Bulunmuyor." ) 
+say ( "Ýrade Gücü Yüzüðü Ýçin Gerekli" ) 
+say ( "Malzemelerinizi Tamamlayýnýz." ) 
+return 
+else  
+pc . remove_item ( 10002 , 5 ) 
+pc . remove_item ( 10003 , 5 )
+pc . remove_item ( 10004 , 5 ) 
+say_item_vnum ( 71148 ) 
+pc . give_item2 ( 71148 , 1 ) 
+say ( "Ýrade Gücü Yüzüðü envanterinize gönderilmiþtir" ) 
+say ( "GameMaster takimi iyi oyunlar diler." ) 
+end 
+end 

@@ -1,0 +1,19 @@
+say ( "4000 Adet Su Tasi" ) 
+say ( "Getirmelisin." )
+say_item_vnum(90005) 
+local sec = select ( "Devam" ) 
+if sec == 1 then 
+local incii = pc . count_item ( 90005 ) 
+if incii < 4000 then  
+say ( "Gerekli Malzemeleriniz Envanterinizde Bulunmuyor." ) 
+say ( "Kemer Almak Ýçin Gerekli" ) 
+say ( "Malzemelerinizi Tamamlayýnýz." ) 
+return  
+else  
+pc . remove_item ( 90005 , 4000 )  
+say_item_vnum ( 18099 ) 
+pc . give_item2 ( 18099 , 1 ) 
+say ( "Kemer envanterinize gönderilmiþtir" ) 
+say ( "GameMaster takimi iyi oyunlar diler." ) 
+end 
+end 

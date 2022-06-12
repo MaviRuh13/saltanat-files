@@ -1,0 +1,59 @@
+say_color ( "white","600 Adet Beyaz Inci Getirmelisin" )
+say_item_vnum(27992) 
+say_color ( "white","600 Adet Mavi Inci Getirmelisin" )
+say_item_vnum(27993) 
+say_color ( "white","600 Adet Kirmizi Inci Getirmelisin" )
+say_item_vnum(27994) 
+local sec = select ( "Devam" ) 
+if sec == 1 then 
+local metal1 = pc . count_item ( 27992 ) 
+local metal2 = pc . count_item ( 27993 ) 
+local metal3 = pc . count_item ( 27994 ) 
+if metal1 < 600 then  
+say_color ( "red","Yeterli Beyaz Inci yok." ) 
+say_color ( "red","Kutsanmýþ Metal alabilmek için " .. 600 - metal .. " Tane Daha " ) 
+say_color ( "red","Beyaz Inci getirmen gerekiyor." ) 
+return 
+elseif metal2 < 600 then  
+say_color ( "green","Yeterli Mavi Inci yok." ) 
+say_color ( "green","Kutsanmýþ Metal alabilmek için " .. 600 - metal .. " Tane Daha " ) 
+say_color ( "green","Mavi Inci getirmen gerekiyor." ) 
+return 
+elseif metal3 < 600 then 
+say_color ( "blue","Yeterli Kirmizi Inci yok." ) 
+say_color ( "blue","Kutsanmýþ Metal alabilmek için " .. 600 - metal .. " Tane Daha " ) 
+say_color ( "blue","Kirmizi Inci getirmen gerekiyor." ) 
+return 
+else  
+local s = math . random ( 1 , 5 ) 
+if s == 1 then 
+pc . removeitem ( 27992 , 600 ) 
+pc . removeitem ( 27993 , 600 ) 
+pc . removeitem ( 27994 , 600 ) 
+pc . give_item2 ( 25042 , 3 ) 
+elseif s == 2 then 
+pc . removeitem ( 27992 , 600 ) 
+pc . removeitem ( 27993 , 600 ) 
+pc . removeitem ( 27994 , 600 ) 
+pc . give_item2 ( 25042 , 3 ) 
+elseif s == 3 then 
+pc . removeitem ( 27992 , 600 ) 
+pc . removeitem ( 27993 , 600 ) 
+pc . removeitem ( 27994 , 600 ) 
+pc . give_item2 ( 25042 , 3 ) 
+elseif s == 4 then 
+pc . removeitem ( 27992 , 600 ) 
+pc . removeitem ( 27993 , 600 ) 
+pc . removeitem ( 27994 , 600 ) 
+pc . give_item2 ( 25042 , 3 ) 
+elseif s == 5 then 
+pc . removeitem ( 27992 , 600 ) 
+pc . removeitem ( 27993 , 600 ) 
+pc . removeitem ( 27994 , 600 ) 
+pc . give_item2 ( 25042 , 3 ) 
+end 
+say_item_vnum ( 25042 ) 
+say_color ( "white","Sana metalini veriyorum." ) 
+say_color ( "white","GameMaster takimi iyi oyunlar diler." ) 
+end 
+end 

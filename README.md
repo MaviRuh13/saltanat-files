@@ -22,3 +22,5 @@ Discord grubumuza davetlisiniz : discord.gg/yz5xNNGM5C
 [ 12.06.2022 ] : Binek modelleri eklendi. > mounts
 
 [ 12.06.2022 ] : Canavar modelleri eklendi. > monsters
+
+[ 12.06.2022 ] : Npc, sandık questleri eklendi. > quests

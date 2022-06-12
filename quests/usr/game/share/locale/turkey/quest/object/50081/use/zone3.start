@@ -1,0 +1,60 @@
+if pc . countitem ( 50081 ) < 200 then 
+syschat ( "|cFF00FFFF|hSandigi Acabilmeniz Icin Envanterinize En Az 200 Sandik Bulunmalidir." ) 
+else 
+if get_time ( ) <= pc . getqf ( "zaman" ) then 
+say_color("yellow","Sandik EngeL Sistemi" ) 
+say_reward ( "" ) 
+say_reward ( "" ) 
+say_color("green","200 Sandigi Tek Tiklayista Acabilirsiniz Ancak," )
+say_color("cyan","Lutfen Sandiklara 2 Saniye Araliklarla Tiklayiniz." )
+say_reward ( "" ) 
+say_reward ( "" ) 
+say_color("red","|----------------------------------------------|" )
+say_color("green","         Iyi Oyunlar Dileriz.                 " )
+say_color("red","|----------------------------------------------|" )
+say_reward ( "" ) 
+else 
+local s = math . random ( 1 , 5 ) 
+if s == 1 then 
+pc . removeitem ( 50081 , 200 ) 
+pc . give_item2 ( 90005 , 20 ) 
+pc . give_item2 ( 27992 , 20 ) 
+pc . give_item2 ( 27993 , 20 ) 
+pc . give_item2 ( 27994 , 20 ) 
+pc . give_item2 ( 80007 , 20 ) 
+pc . setqf ( "zaman" , get_time ( ) + 2 * 1 ) 
+elseif s == 2 then 
+pc . removeitem ( 50081 , 200 ) 
+pc . give_item2 ( 90005 , 25 ) 
+pc . give_item2 ( 27992 , 25 ) 
+pc . give_item2 ( 27993 , 25 ) 
+pc . give_item2 ( 27994 , 25 ) 
+pc . give_item2 ( 80007 , 25 ) 
+pc . setqf ( "zaman" , get_time ( ) + 2 * 1 ) 
+elseif s == 3 then 
+pc . removeitem ( 50081 , 200 ) 
+pc . give_item2 ( 90005 , 30 ) 
+pc . give_item2 ( 27992 , 30 ) 
+pc . give_item2 ( 27993 , 30 ) 
+pc . give_item2 ( 27994 , 30 ) 
+pc . give_item2 ( 80007 , 30 ) 
+pc . setqf ( "zaman" , get_time ( ) + 2 * 1 ) 
+elseif s == 4 then 
+pc . removeitem ( 50081 , 200 ) 
+pc . give_item2 ( 90005 , 35 ) 
+pc . give_item2 ( 27992 , 35 ) 
+pc . give_item2 ( 27993 , 35 ) 
+pc . give_item2 ( 27994 , 35 ) 
+pc . give_item2 ( 80007 , 35 ) 
+pc . setqf ( "zaman" , get_time ( ) + 2 * 1 ) 
+elseif s == 5 then 
+pc . removeitem ( 50081 , 200 ) 
+pc . give_item2 ( 90005 , 40 ) 
+pc . give_item2 ( 27992 , 40 ) 
+pc . give_item2 ( 27993 , 40 ) 
+pc . give_item2 ( 27994 , 40 ) 
+pc . give_item2 ( 80007 , 40 ) 
+pc . setqf ( "zaman" , get_time ( ) + 2 * 1 ) 
+end
+end 
+end 

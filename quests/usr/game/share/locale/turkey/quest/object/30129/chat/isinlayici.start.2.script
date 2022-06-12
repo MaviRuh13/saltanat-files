@@ -1,0 +1,45 @@
+say ( "200 (400 M BAR),200 Catacomb Sandigi" ) 
+say ( "Ayrýca devam et" )
+say_item_vnum(80007)
+say_item_vnum(50077) 
+local sec = select ( "Devam" )
+say ( "200 (400.000.000 Yang),500 Su Taþý Getirmelisin." ) 
+say_item_vnum(80007)
+say_item_vnum(90005)
+local sec = select ( "Tamam" ) 
+if sec == 1 then 
+local incii = pc . count_item ( 80007 ) 
+local inciii = pc . count_item ( 50077 )
+local inciiii = pc . count_item ( 80007 )
+local inciiiii = pc . count_item ( 90005 )
+if incii < 200 then  
+say ( "Gerekli Malzemeleriniz Envanterinizde Bulunmuyor." ) 
+say ( "Geliþmiþ Elmas Ýçin Gerekli" ) 
+say ( "Malzemelerinizi Tamamlayýnýz." ) 
+return 
+elseif inciii < 200 then 
+say ( "Gerekli Malzemeleriniz Envanterinizde Bulunmuyor." ) 
+say ( "Geliþmiþ Elmas Ýçin Gerekli" ) 
+say ( "Malzemelerinizi Tamamlayýnýz." ) 
+return
+elseif inciiii < 200 then 
+say ( "Gerekli Malzemeleriniz Envanterinizde Bulunmuyor." ) 
+say ( "Geliþmiþ Elmas Ýçin Gerekli" ) 
+say ( "Malzemelerinizi Tamamlayýnýz." ) 
+return
+elseif inciiiii < 500 then 
+say ( "Gerekli Malzemeleriniz Envanterinizde Bulunmuyor." ) 
+say ( "Geliþmiþ Elmas Ýçin Gerekli" ) 
+say ( "Malzemelerinizi Tamamlayýnýz." ) 
+return 
+else  
+pc . remove_item ( 80007 , 200 ) 
+pc . remove_item ( 50077 , 200 )
+pc . remove_item ( 80007 , 200 )
+pc . remove_item ( 90005 , 500 ) 
+say_item_vnum ( 10005 ) 
+pc . give_item2 ( 10005 , 1 ) 
+say ( "Geliþmiþ Elmas envanterinize gönderilmiþtir" ) 
+say ( "GameMaster takýmý iyi oyunlar diler" ) 
+end 
+end 
