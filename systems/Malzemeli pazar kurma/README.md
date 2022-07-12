@@ -1,1 +1,3 @@
-![futuraf](https://user-images.githubusercontent.com/61208397/173236859-3a46a267-ad82-4dc4-b0c0-ec30507c4a8c.jpg)
+# Npcde efsunlu taşlı item satma sistemine uyarlıdır.
+
+![unknown](https://user-images.githubusercontent.com/61208397/178494627-6ea42980-501c-49ab-be49-da6fe1a79b24.png)
