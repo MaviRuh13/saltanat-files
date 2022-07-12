@@ -2,7 +2,6 @@ Discord grubumuza davetlisiniz : **discord.gg/yz5xNNGM5C**
 
 
 
-
 # GÜNCELLEME DETAYLARI
 <sup>
 
