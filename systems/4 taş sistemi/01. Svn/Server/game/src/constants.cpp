@@ -1,0 +1,78 @@
+// Arat
+const int aiWeaponSocketQty[WEAPON_NUM_TYPES] =
+{
+	3, // WEAPON_SWORD,
+	3, // WEAPON_DAGGER,
+	3, // WEAPON_BOW,
+	3, // WEAPON_TWO_HANDED,
+	3, // WEAPON_BELL,
+	3, // WEAPON_FAN,
+	0, // WEAPON_ARROW,
+	0, // WEAPON_MOUNT_SPEAR
+#ifdef ENABLE_WOLFMAN_CHARACTER
+	3, // WEAPON_CLAW
+#endif
+};
+
+const int aiArmorSocketQty[ARMOR_NUM_TYPES] =
+{
+	3, // ARMOR_BODY,
+	1, // ARMOR_HEAD,
+	1, // ARMOR_SHIELD,
+	0, // ARMOR_WRIST,
+	0, // ARMOR_FOOTS,
+	0  // ARMOR_ACCESSORY
+};
+
+// Degistir
+#ifdef ENABLE_FOUR_STONE_SYSTEM
+const int aiWeaponSocketQty[WEAPON_NUM_TYPES] =
+{
+	4, // WEAPON_SWORD,
+	4, // WEAPON_DAGGER,
+	4, // WEAPON_BOW,
+	4, // WEAPON_TWO_HANDED,
+	4, // WEAPON_BELL,
+	4, // WEAPON_FAN,
+	0, // WEAPON_ARROW,
+	0, // WEAPON_MOUNT_SPEAR
+#ifdef ENABLE_WOLFMAN_CHARACTER
+	4, // WEAPON_CLAW
+#endif
+};
+
+const int aiArmorSocketQty[ARMOR_NUM_TYPES] =
+{
+	4, // ARMOR_BODY,
+	1, // ARMOR_HEAD,
+	1, // ARMOR_SHIELD,
+	0, // ARMOR_WRIST,
+	0, // ARMOR_FOOTS,
+	0  // ARMOR_ACCESSORY
+};
+#else
+const int aiWeaponSocketQty[WEAPON_NUM_TYPES] =
+{
+	3, // WEAPON_SWORD,
+	3, // WEAPON_DAGGER,
+	3, // WEAPON_BOW,
+	3, // WEAPON_TWO_HANDED,
+	3, // WEAPON_BELL,
+	3, // WEAPON_FAN,
+	0, // WEAPON_ARROW,
+	0, // WEAPON_MOUNT_SPEAR
+#ifdef ENABLE_WOLFMAN_CHARACTER
+	3, // WEAPON_CLAW
+#endif
+};
+
+const int aiArmorSocketQty[ARMOR_NUM_TYPES] =
+{
+	3, // ARMOR_BODY,
+	1, // ARMOR_HEAD,
+	1, // ARMOR_SHIELD,
+	0, // ARMOR_WRIST,
+	0, // ARMOR_FOOTS,
+	0  // ARMOR_ACCESSORY
+};
+#endif
