@@ -42,3 +42,8 @@ Discord grubumuza davetlisiniz : **discord.gg/yz5xNNGM5C**
 
 [ 12.07.2022 ] : Animasyonlu kanat sistemi eklendi. > **systems**
 </sup>
+
+# ÖNERİLER
+<sup>
+** Kutsanmış metal sistemini kurduysan kutsama kağıdı, büyülü metal'i oyun içi erişimini iptal et.**
+</sup>
