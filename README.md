@@ -46,5 +46,5 @@ Discord grubumuza davetlisiniz : **discord.gg/yz5xNNGM5C**
 # ÖNERİLER
 <sup>
 
-Kutsanmış metal sistemini kurduysan kutsama kağıdı, büyülü metal'i oyun içi erişimini iptal et.
+[1]: Kutsanmış metal sistemini kurduysan kutsama kağıdı, büyülü metal'i oyun içi erişimini iptal et.
 </sup>
