@@ -37,4 +37,6 @@ Discord grubumuza davetlisiniz : **discord.gg/yz5xNNGM5C**
 [ 12.06.2022 ] : 1-5 arası efsunu mavi renk yapma eklentisi eklendi. > **systems**
 
 [ 12.07.2022 ] : Gelişmiş elmas sistemi eklendi. > **systems**
+
+[ 12.07.2022 ] : 4 taş sistemi eklendi. > **systems**
 </sup>
