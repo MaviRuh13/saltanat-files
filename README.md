@@ -41,6 +41,8 @@ Discord grubumuza davetlisiniz : **discord.gg/yz5xNNGM5C**
 [ 12.07.2022 ] : Malzemeli pazar kurma sistemi güncellendi. > **systems**
 
 [ 12.07.2022 ] : Animasyonlu kanat sistemi eklendi. > **systems**
+
+[ 12.07.2022 ] : Kutsanmış metal sistemi eklendi. > **systems**
 </sup>
 
 # ÖNERİLER

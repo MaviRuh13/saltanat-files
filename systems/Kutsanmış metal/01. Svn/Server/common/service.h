@@ -1,0 +1,2 @@
+// Ekle
+#define ENABLE_BLESSED_METAL_SYSTEM
