@@ -1,2 +1,0 @@
-// Ekle
-#define MAVIRUH_MULTI_PRICE
