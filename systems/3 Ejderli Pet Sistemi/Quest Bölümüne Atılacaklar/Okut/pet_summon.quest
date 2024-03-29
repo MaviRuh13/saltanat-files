@@ -1,0 +1,70 @@
+quest pet_summon begin
+	state start begin
+		when 53001.use or 53002.use begin
+			if horse.is_summon() then
+				syschat("<PET> Atýn yanýndayken evcil hayvan çaðýramazsýn.")
+			elseif pc.is_mount() then
+				syschat("<PET> Atýn yanýndayken evcil hayvan çaðýramazsýn.")
+			else
+			if not PetSystem.IsActive() then
+				local PetNumber = {[53001]=1,[53002]=2,[53003]=3,[53005]=4,[53006]=5,[53007]=6,[53008]=7,[53009]=8}
+				local petIndex = PetNumber[item.get_vnum()]
+				pc.setqf("petindex", petIndex)					
+				PetSystem.SetActivePet(petIndex)
+				PetSystem.pokaz_gui(1)
+				PetSystem.AddBonus(petIndex)
+			else
+				PetSystem.pokaz_gui(5)
+			end
+		end
+	end
+		
+		when login begin
+			cmdchat("horse_button "..q.getcurrentquestindex())
+			PetSystem.pokaz_gui(6)
+			cmdchat("PetZamnkij")
+		end
+
+		when dead begin
+			cmdchat("horse_button "..q.getcurrentquestindex())
+			PetSystem.pokaz_gui(6)
+			cmdchat("PetZamnkij")
+		end
+
+		when button or info begin
+			if not PetSystem.IsActive() then
+				syschat("<PET> Pet menüsünü açmak için Evcil hayvanýný çaðýrmalýsýn.")
+				return
+			else
+			local petIndex = pc.getqf("petindex")
+			PetSystem.ShowMenu(petIndex)
+			end
+		end
+		
+		when 30130.use begin
+			if not PetSystem.IsActive() then
+				syschat("<PET> Evcil hayvanýna tecrübe kazandýrmak için onu yanýna çaðýrmalýsýn.")
+				return
+			end
+			if pc.getqf("exp_blocked") == 1 then
+				syschat("<PET> Evcil hayvanýna tecrübe kazandýrmak için tecrübe kazandýrmayý aktif etmelisin.")
+				return
+			end
+			
+			local PetHasGotExp = PetSystem.GiveExp(PetSystem.GetActivePet(), PetSystem.ItemExp)
+			if not PetHasGotExp then
+				syschat("<PET> Evcil hayvanýnýn tecrübeye ihtiyacý yok.")
+			else
+				chat("Evcil hayvanýn "..PetSystem.ItemExp.." tecrübe kazandý.")
+				PetSystem.pokaz_gui(2)	
+				return
+			end
+		end
+
+		when logout begin
+			cmdchat("horse_button "..q.getcurrentquestindex())
+			PetSystem.pokaz_gui(6)
+			cmdchat("PetZamnkij")
+		end
+	end
+end
